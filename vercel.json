@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    { "source": "/api/proxy", "destination": "/api/proxy" },
+    { "source": "/assets/:path*", "destination": "/api/proxy?path=assets/:path*" },
+    { "source": "/favicon.svg", "destination": "/api/proxy?path=favicon.svg" },
+    { "source": "/cdn-cgi/:path*", "destination": "/api/proxy?path=cdn-cgi/:path*" }
+  ]
+}
